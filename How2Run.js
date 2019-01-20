@@ -8,16 +8,17 @@ client.on ("ready", () => {
 });
 
 const prefix = "R!"
+const prefix2 = "r!"
 
 client.on ("message", (message) => {
     
-    message.content.toLowerCase;
-    
     if (message.author.bot) return;
-    
-    msg = message.content.toLowerCase();
 
-    if (msg.startsWith (prefix)) {
+    if (message.content.startsWith (prefix)) {
+        message.react('✅');
+        message.react('❎');
+    }
+    if (message.content.startsWith (prefix2)) {
         message.react('✅');
         message.react('❎');
     }
