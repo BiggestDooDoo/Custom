@@ -14,10 +14,6 @@ client.on ("message", (message) => {
     
     if (message.author.bot) return;
 
-    if (message.content.startsWith (prefix)) {
-        message.react('✅');
-        message.react('❎');
-    }
     if (message.content.startsWith ("")) {
         message.react('✅');
         message.react('❎');
