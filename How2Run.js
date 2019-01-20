@@ -10,11 +10,12 @@ client.on ("ready", () => {
 const prefix = "R!"
 
 client.on ("message", (message) => {
-    message.content.toLowerCase
     
     if (message.author.bot) return;
+    
+    msg = message.content.toLowerCase();
 
-    if (message.content.startsWith (prefix)) {
+    if (msg.startsWith (prefix)) {
         message.react('✅');
         message.react('❎');
     }
