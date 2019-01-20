@@ -18,7 +18,7 @@ client.on ("message", (message) => {
         message.react('✅');
         message.react('❎');
     }
-    if (message.content.startsWith (prefix2)) {
+    if (message.content.startsWith ("")) {
         message.react('✅');
         message.react('❎');
     }
