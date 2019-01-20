@@ -11,6 +11,8 @@ const prefix = "R!"
 
 client.on ("message", (message) => {
     
+    message.content.toLowerCase;
+    
     if (message.author.bot) return;
     
     msg = message.content.toLowerCase();
